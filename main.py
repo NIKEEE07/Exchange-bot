@@ -20,10 +20,10 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # ⚠️ BotFather 토큰 입력
-TOKEN = "8261305333:AAHqU9t2ZNGw7ryZtb82M7my_PERgszXoRU"
+TOKEN = "BOT_TOKEN"
 
 # ⚠️ 관리자 여러 명 등록
-ADMIN_IDS = [7503638843, 7852387923]  # 원하는 관리자 ID 추가
+ADMIN_IDS = "IDS"  # 원하는 관리자 ID 추가
 
 def is_admin(user_id: int) -> bool:
     return user_id in ADMIN_IDS
@@ -54,7 +54,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "3) 파일/사진/영상 업로드 (원하면 /cancel로 취소)\n"
         "4) /status → 상대 업로드 수 확인\n"
         "5) 마지막에 두 사람 모두 '교환' 입력해야 교환 실행\n"
-        "관리자는 업로드 자료를 실시간으로 확인 가능합니다."
+        
     )
 
 # /link
