@@ -20,10 +20,10 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # ⚠️ BotFather 토큰 입력
-TOKEN = "BOT_TOKEN"
+TOKEN = "8261305333:AAHqU9t2ZNGw7ryZtb82M7my_PERgszXoRU"
 
 # ⚠️ 관리자 여러 명 등록
-ADMIN_IDS = "IDS"  # 원하는 관리자 ID 추가
+ADMIN_IDS = [7503638843, 7852387923]  # 원하는 관리자 ID 추가
 
 def is_admin(user_id: int) -> bool:
     return user_id in ADMIN_IDS
